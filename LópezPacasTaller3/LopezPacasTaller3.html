@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="utf-8" />
+
+<title>Taller 3</title>
+<script type="text/javascript" src="js/Taller.js"></script>
+<link rel="stylesheet" type="text/css" href="css/archivo.css">
+
+</head>
+
+<body>
+
+<form name="formulario" class="formulario">
+
+    <h1>Cajero el amigo feliz</h1>
+    
+    <p class="titulo1">Entidad Bancaria <br><input type="text" name="producto" id="producto"></p>
+
+    <p class="titulo2">Tipo de Tarjeta <br> <select name="dato">  <option value="0" >--</option><option value="1">VISA</option><option value="2">MasterCard</option><option value="3">AmericanExpress</option></select>
+
+    <p class="titulo3">Numero de la Tarjeta: <input type="text" name="numero" id="numero" value=""></p>
+    <p class="titulo4">Fecha de Caducidad: <br><input type="month" name="fecha" id="fecha" value=""></p>
+    <p class="titulo4">Monto a ingresar: <br><input type="text" name="cantidad" id="cantidad" value=""></p>
+    <p class="titulo5"> Fecha de Corte: <br><input type="date" name="fechacorte" id="fecha2" value=""> </p>
+
+    <p><input type="button" onclick="addProducto()" name="guardar" id="guardar" value="guardar"></p>
+
+    <p><input type="button" onclick="limpiarVista()" name="limpiar" id="limpiar" value="Limpiar Vista"></p>
+
+    <p><input type="button" onclick="borrarTodo()" name="borrar" id="borrar" value="Borrar todo"></p>
+
+    <p><input type="button" onclick="MostrarDatos()" name="mostrar" id="mostrar" value="mostrar todo"></p>
+
+</form>
+
+<br/>
+
+<div id="datosDisponibles">No hay información almacenada</div>
+
+</body>
